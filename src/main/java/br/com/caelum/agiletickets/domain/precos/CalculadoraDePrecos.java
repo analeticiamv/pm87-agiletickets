@@ -44,5 +44,9 @@ public class CalculadoraDePrecos {
 
 		return preco.multiply(BigDecimal.valueOf(quantidade));
 	}
-
+	
+	public static BigDecimal calculaa(Sessao sessao, Integer quantidade) {
+		return sessao.getEspetaculo().getTipo().CalculaPreco(sessao, quantidade);
+	}
+	
 }
